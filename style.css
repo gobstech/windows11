@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ativo {
+    background-color: #0079D5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.quadrado {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-color: #0079D5;
+    transition: 1s all ease-out;
+}
+
+.quadradoAtivo {
+    transition: 1s all ease-out;
+    background-color: white;
+}
+
+@media (max-width: 500px) {
+    .quadrado {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(imgs/desktop2.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Segoe UI";
+}
+
+.taskbar {
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 100%; 
+    position: absolute;
+    top: 94.8vh;
+    opacity: .85; 
+}
+
+.taskbar > i {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 5px; 
+    font-size: 24px; 
+    padding: 5px; 
+}
+
+.blue {
+    color: #0F54B5;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: rgb(212, 212, 18);
+}
+
+.edge {
+    color: #3277BB;
+}
+
+.store {
+    color: #0D5A9F;
+}
+
+.grid-logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.square {
+    background-color: #0079D5;
+    width: 12px;
+    height: 12px;
+    margin: .5px;
+}
+
+#start {
+    margin: 10px;
+    padding: 5px;
+}
+
+#start:hover, .taskbar > i:hover  {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 13vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalActive {
+    display: block;
+    transition: all ease-out .5s;
+}
+
+.start-menu {
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    opacity: .85;
+    transition: all ease-out .5s;
+}
+
+input {
+    justify-content: center;
+    width: 550px;
+    height: 25px;
+    margin: 10px 0px;
+    padding: 5px;
+    font-family: "Segoe UI";
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-self: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.item {
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.item > i {
+    margin: 10px auto;
+    font-size: 30px;
+} 
+
+.file-col {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-self: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.file-item {
+    text-align: center;
+}
+
+.file-item > i {
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+.pc-options {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0px;
+}
+
+.pc-options > i {
+    font-size: 20px;
+    margin: 10px;
+}

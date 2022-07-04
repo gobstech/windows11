@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Windows 11 Desktop</title>
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+
+    <div class="taskbar">
+        <div id="start">
+            <div class="grid-logo">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="grid-logo">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-columns blue"></i>
+            <i class="fas fa-comment purple"></i>
+            <i class="fas fa-folder yellow"></i>
+            <i class="fab fa-edge edge"></i>
+            <i class="fas fa-shopping-bag store"></i>        
+    </div>
+    
+
+    <div class="modal">
+        <div class="start-menu">
+            <input type="text" placeholder="Digite aqui para pesquisar"><i  style="margin: 5px;" class="fas fa-search"></i>
+            <div class="grid-menu">
+                <div class="item">
+                    <i class="fab fa-edge edge"></i>
+                    <h5>Microsoft Edge</h5>
+                </div>
+                <div class="item">
+                    <i class="fab fa-facebook"></i>
+                    <h5>Facebook</h5>
+                </div>
+                <div class="item">
+                    <i class="fab fa-twitter"></i>
+                    <h5>Twitter</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-mobile"></i>
+                    <h5>Telefone</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book"></i>
+                    <h5>Bloco de Notas</h5>
+                </div>
+            </div>
+            <div class="grid-menu">
+                <div class="item">
+                    <i class="fas fa-envelope"></i>
+                    <h5>Outlook</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-image"></i>
+                    <h5>Fotos</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-cog"></i>
+                    <h5>Configurações</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-play-circle"></i>
+                    <h5>Vídeos</h5>
+                </div>
+                <div class="item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h5>WhatsApp</h5>
+                </div>
+                <div class="item">
+                    <i class="fas fa-calculator"></i>
+                    <h5>Calculadora</h5>
+                </div>
+            </div>
+            <div class="files">
+                <div class="file-col">
+                    <div class="file-item">
+                        <i class="fas fa-file-word"></i>
+                        <h5>doc.docx</h5>
+                    </div>
+                    <div class="file-item">
+                        <i class="fas fa-file-excel"></i>
+                        <h5>excel.xls</h5>
+                    </div>
+                    <div class="file-item">
+                        <i class="fas fa-file-powerpoint"></i>
+                        <h5>pres.ppt</h5>
+                    </div>
+                </div>
+                <div class="file-col">
+                    <div class="file-item">
+                        <i class="fas fa-file-word"></i>
+                        <h5>doc.docx</h5>
+                    </div>
+                    <div class="file-item">
+                        <i class="fas fa-file-excel"></i>
+                        <h5>excel.xls</h5>
+                    </div>
+                    <div class="file-item">
+                        <i class="fas fa-file-powerpoint"></i>
+                        <h5>pres.ppt</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-options">
+                <i class="fas fa-power-off"></i>
+                <i class="fas fa-lock"></i>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const startBtn = document.querySelector("#start");
+        const search = document.querySelector("#search");
+        const modal = document.querySelector(".modal");
+
+        startBtn.addEventListener("click", () => {
+            modal.classList.toggle("modalActive");
+        });
+
+        search.addEventListener("click", () => {
+            modal.classList.toggle("modalActive");
+        });
+        
+
+    </script>
+
+</body>
+</html>
